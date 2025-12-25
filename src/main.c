@@ -425,7 +425,7 @@ int main( int argc, char *argv[] )
   }
 
   if (sb_percentile_init(&local_percentile, 100000, 1.0, 1e13))
-    return NULL;
+    return 1;
 
   /* set up threads */
 
