@@ -4,9 +4,11 @@
 
 
 
-LIBS=		`mysql_config --libs_r` -lrt
+#LIBS=		`mysql_config --libs_r` -lrt
+LIBS=           -L/usr/lib -lmariadb -lpthread -lm -ldl -lrt
 
-INC=		-I. `mysql_config --include`
+#INC=		-I. `mysql_config --include`
+INC=            -I. -I/usr/include/mysql
 
 #DEFS=		-DDEBUG
 
