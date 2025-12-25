@@ -17,7 +17,7 @@
 #include <fcntl.h>
 
 #include <mysql.h>
-
+#include <sys/time.h>
 #include "spt_proc.h"
 #include "tpc.h"
 
